@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #D8DBE2;
+    background-color: #A9BCD0;
     width: 99vw;
 }
 
@@ -79,6 +79,7 @@ nav {
     background-color: #DAA49A;
     margin: 1%;
     padding: 2%;
+    border: 2px solid #E56399;
 }
 
 .subsections {
@@ -115,8 +116,6 @@ nav {
     align-items: center;
     text-decoration: underline;
 }
-
-.link:on
 
 .myWork {
     display: grid;
@@ -172,7 +171,7 @@ nav {
     cursor: pointer;
     transition: 500ms;
 }
-.title {
+.project-info {
     background-color: #7FD1B9;
     color: #373F51;
     margin-left: 0;
@@ -180,6 +179,12 @@ nav {
     padding-right: 5%;
     flex-wrap: wrap;
     text-align: left;
+    padding: 2px;
+}
+
+h4{
+    padding-top: 2px;
+    font-size: small;
 }
 
 .footer {
