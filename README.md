@@ -16,3 +16,4 @@ My intent behind the design of this website, was to practice using flexboxes and
 
 ## License
 This is a personal project that falls under the MIT license. 
+All photos come from Pixabay and are copy right and royalty free. For more information, visit "https://pixabay.com/blog/posts/pixabay-license-what-is-allowed-and-what-is-not--4/".
