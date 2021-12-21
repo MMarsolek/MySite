@@ -8,27 +8,36 @@
     font-size: large;
 }
 
+:root{
+    --main-text: #424B54;
+    --highlighted-text: #E2B4BD;
+    --highlighted-background: #424B54;
+    --background:#93A8AC;
+    --dark-background:#9B6A6C;
+    --light: #F5F5F5;
+}
+
 body {
-    background-color: #A9BCD0;
+    background-color: var(--background);
     width: 99vw;
 }
 
 nav {
     display: flex;
-    background-color: #7FD1B9;
+    background-color: var(--dark-background);
     overflow: hidden;
     justify-content: space-between;
     height: 10vh;
     padding-left: 0;
     font-size: large;
-    color: #7A6563;
+    color: var(--main-text);
     align-items: center;
 }
 
 .navbar h1 {
     font-size: 2em;
-    color: #E5D4CE;
-    background-color: #E56399;
+    color: var(--main-text);
+    background-color: var(--background);
     align-self: center;
     padding: 0 2vw 0 5vw;
     }
@@ -38,18 +47,18 @@ nav {
     margin-right: 1vw;
     margin-left: 1vw;
     display: inline-block;
-    color: #7A6563;
+    color: var(--main-text);
+    padding: 1vw .5vw;
 }
 
-.navbar li:hover, .contact a:hover {
+.contact a:hover, .navbar a:hover{
     border-radius: 2vw;
-    border: #E56399;
-    background-color: #E56399;
-    color: #E5D4CE;
-    padding-top: 1vw;
-    padding-bottom: 1vw; 
+    border: var(--highlighted-background);
+    background-color: var(--highlighted-background);
+    color: var(--highlighted-text);
     transition: 500ms ease-in-out;
     justify-content: center;
+
 }
 
 #banner {
@@ -64,8 +73,8 @@ nav {
 }
 
 .subtitle {
-    background-color: #DAA49A;
-    color: #373F51;
+    background-color: var(--background);
+    color: var(--main-text);
     text-align: left;
     align-self: center;
     padding: 1%;
@@ -75,11 +84,11 @@ nav {
 .mainBody {
     display: flex;
     flex-direction: column;
-    color: #373F51;
-    background-color: #DAA49A;
+    color: var(--main-text);
+    background-color: var(--light);
     margin: 1%;
     padding: 2%;
-    border: 2px solid #E56399;
+    border: 2px solid var(--dark-background);
 }
 
 .subsections {
@@ -88,6 +97,7 @@ nav {
     flex-wrap: wrap;
     align-items: center;
     padding-bottom: 1%;
+    color: var(--dark-background);
 }
 .sidebar {
     padding: 2% 2% 2% 0;
@@ -97,6 +107,10 @@ nav {
     text-align: right;
     font-size: 150%;
 }
+
+#aboutMe{
+    color: var(--main-text);
+}
 .content {
     display: flex;
     flex-wrap: wrap;
@@ -104,19 +118,31 @@ nav {
     flex-direction: row;
     width: 80%;
     padding: 2%;
-    text-align: right;
-    border-left: 2px solid #E56399;
+    text-align: left;
+    border-left: 2px solid var(--dark-background);
     height: fit-content;
-
 }
 
 .link {
-    color: #373F51;
+    color: var(--main-text);
     justify-content: space-evenly;
     align-items: center;
     text-decoration: underline;
 }
+.contact-link, .contact-link:focus{
+    text-decoration: underline;
+    color: var(--main-text);
+    padding: 1vw; 
+}
 
+.contact-link:hover{
+    border-radius: 2vw;
+    border: var(--highlighted-text);
+    background-color: var(--highlighted-text);;
+    color: var(--highlighted-background);;
+    transition: 500ms ease-in-out;
+    justify-content: center;
+}
 .myWork {
     display: grid;
     gap: 1%;
@@ -130,40 +156,40 @@ nav {
 }
 
 .myWork a {
-    border: 3px solid #7FD1B9;
+    border: 3px solid var(--highlighted-text);
     background-size: cover;
     display: flex;
     align-items: center;
-    
 }
+
 #project-1 {
     grid-area: project-1;
     background-image: url("./images/coding.jpg");
-    height: 40vh;
+    height: 45vh;
 }
 
 #project-2 {
     grid-area: project-2;
     background-image: url("./images/computerGlobe.jpg");
-    height: 20vh;
+    height: 25vh;
 }
 
 #project-3 {
     grid-area: project-3;
     background-image: url("./images/hardware.jpg");
-    height: 20vh;
+    height: 25vh;
 }
 
 #project-4 {
     grid-area: project-4;
     background-image: url("./images/laptop.jpg");
-    height: 20vh;
+    height: 25vh;
 }
 
 #project-5 {
     grid-area: project-5;
     background-image: url("./images/laptopCode.jpg");
-    height: 20vh;
+    height: 25vh;
 }
 
 .myWork a:hover {
@@ -172,14 +198,18 @@ nav {
     transition: 500ms;
 }
 .project-info {
-    background-color: #7FD1B9;
-    color: #373F51;
+    background-color: var(--highlighted-text);
+    color: var(--main-text);
     margin-left: 0;
-    width: 20%;
-    padding-right: 5%;
+    width: fit-content;
+    max-width: 50%;
+    padding: 1%;
     flex-wrap: wrap;
     text-align: left;
-    padding: 2px;
+}
+
+#project-1 .project-info{
+    max-width: 30%;
 }
 
 h4{
@@ -190,8 +220,12 @@ h4{
 .footer {
     text-align: center;
     height: 20px;
+    padding: 1%;
     position: relative;
     bottom: 0;
     right: 0%;
     left: 0%;
+}
+h5{
+    padding-bottom: 1%;
 }
