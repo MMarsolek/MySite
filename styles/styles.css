@@ -193,7 +193,7 @@ nav {
 }
 
 .myWork a:hover {
-    box-shadow:  0 0 50px #373F51;
+    box-shadow:  0 0 50px var(--highlighted-background);
     cursor: pointer;
     transition: 500ms;
 }
