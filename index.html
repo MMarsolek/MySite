@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <head>
+    <!-- This link resets the CSS to the basic -->
     <link rel="reset" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <nav class="navbar">
         <h1>Mariah Marsolek</h1>        
         <ul>
+            <!-- Relative links are linked by the class ID. -->
             <li><a href="#aboutMe">About Me</a></li>
             <li><a href="#myWork">My Work</a></li>
             <li><a href="#contactMe">Contact Me</a></li>
-            <li><a href="#footer">Resume</a></li>
+            <!--This link will take you to my resume that is stored on my Google Drive -->
+            <li><a href="https://drive.google.com/file/d/13GH4Z1QfJ9nmJjf4Kz66TvJLOqW3plVJ/view?usp=sharing" target="_blank">Resume</a></li>
         </ul>
     </nav>
 </head>
 <body>
+    <!-- This is the banner and subtitle section. The photo is added and cropped in CSS -->
     <section id="banner">
-        
         <div class="subtitle">
             <h2>I'm Mariah and this is my website!</h2>
         </div>
@@ -31,8 +34,10 @@
         </section>
         <section class="subsections">
             <aside class="sidebar" >My Work</aside>
+            <!-- Any additional projects can be added here but will need to be added to the grid CSS -->
             <div class="content myWork"id="myWork">
                 <a href="https://mmarsolek.github.io/Horiseon_Optimization/" target="_blank" id="project-1">
+            <!-- This section uses h3 and h4 tags for the project name and short description -->
                     <section class="project-info">
                         <h3>Horiseon Optimization</h3>
                         <h4>For this project I updated the Horiseon site to make it more accessible. I also streamlined the CSS code and made it more efficient.</h4>
@@ -50,16 +55,16 @@
                         <h4>For this personal project, I focused on building the frontend of a fully functioning site to host a silent auction. This included managing and storing bidder data, item data, and user credentials. I also had to make use of browser cookies to help with a more streamlined user experience. </h4>
                     </section>
                 </a>
-                <a  href="https://mmarsolek.github.io/Horiseon_Optimization/" target="_blank" id="project-4">
+                <a  href="https://github.com/MMarsolek/WebCrawler.git" target="_blank" id="project-4">
                     <section class="project-info">
-                        <h3>Project title</h3>
-                        <h4>Project description goes here</h4>
+                        <h3>WebCrawler</h3>
+                        <h4>For this personal project I used Java to create a WebCrawler. This multi-threaded WebCrawler takes user input and displays the gathered data.</h4>
                     </section>
                 </a>
-                <a  href="https://mmarsolek.github.io/Horiseon_Optimization/" target="_blank" id="project-5">
+                <a  href="https://github.com/MMarsolek/FirstRepo.git" target="_blank" id="project-5">
                     <section class="project-info">
-                        <h3>Project title</h3>
-                        <h4>Project description goes here</h4>
+                        <h3>FirstRepo</h3>
+                        <h4>Nothing is really here. This is just the first repo I created for my BootCamp.</h4>
                     </section>
                 </a>
             </div>
@@ -67,6 +72,7 @@
         <section class="subsections">
             <aside class="sidebar">Contact Me</aside>
             <div class="content link"  id="contactMe">
+                <!-- Contact information linked here -->
                 <a href="https://www.linkedin.com/in/mariahmarsolek" target="_blank" class="contact-link"> Portfolio </a>
                 <a href="https://github.com/MMarsolek" target="_blank" class="contact-link"> GitHub </a>
                 <a href="mailto: mamarsolek@gmail.com" target="_blank" class="contact-link"> Contact Me </a>

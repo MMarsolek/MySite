@@ -8,6 +8,8 @@
     font-size: large;
 }
 
+
+/* This root class creates all the needed color variables.  */
 :root{
     --main-text: #424B54;
     --highlighted-text: #E2B4BD;
@@ -20,6 +22,7 @@
 body {
     background-color: var(--background);
     width: 99vw;
+    color: var(--main-text);
 }
 
 nav {
@@ -28,15 +31,14 @@ nav {
     overflow: hidden;
     justify-content: space-between;
     height: 10vh;
+    width: 100vw;
     padding-left: 0;
     font-size: large;
-    color: var(--main-text);
     align-items: center;
 }
 
 .navbar h1 {
     font-size: 2em;
-    color: var(--main-text);
     background-color: var(--background);
     align-self: center;
     padding: 0 2vw 0 5vw;
@@ -47,10 +49,10 @@ nav {
     margin-right: 1vw;
     margin-left: 1vw;
     display: inline-block;
-    color: var(--main-text);
     padding: 1vw .5vw;
+    color: var(--main-text);
 }
-
+/* This class sets the hover style for both the navbar buttons at the top of the page and the buttons to contact me on the bottom of the page. */
 .contact a:hover, .navbar a:hover{
     border-radius: 2vw;
     border: var(--highlighted-background);
@@ -60,21 +62,19 @@ nav {
     justify-content: center;
 
 }
-
+/* This assigns and crops the banner image. */
 #banner {
     display: flex;
-    margin: 0;
-    width: 100%;
-    height: 10em;
+    height: 13vh;
+    width: 100vw;
     overflow: hidden;
     object-fit: cover;
     background-image: url("./images/banner.jpg");
     justify-content: flex-end;
 }
-
+/* This styles the subtitle flag that hangs over the banner */
 .subtitle {
-    background-color: var(--background);
-    color: var(--main-text);
+    background-color: var(--highlighted-text);
     text-align: left;
     align-self: center;
     padding: 1%;
@@ -84,7 +84,6 @@ nav {
 .mainBody {
     display: flex;
     flex-direction: column;
-    color: var(--main-text);
     background-color: var(--light);
     margin: 1%;
     padding: 2%;
@@ -108,6 +107,7 @@ nav {
     font-size: 150%;
 }
 
+/* This sets the color so it stands out from the contents of the sidebar. */
 #aboutMe{
     color: var(--main-text);
 }
@@ -143,6 +143,9 @@ nav {
     transition: 500ms ease-in-out;
     justify-content: center;
 }
+
+
+/* grid-template-areas sets the layout and space taken up by the grid sections */
 .myWork {
     display: grid;
     gap: 1%;
@@ -162,10 +165,16 @@ nav {
     align-items: center;
 }
 
+
+/* Each grid area has a name associated with it */
 #project-1 {
     grid-area: project-1;
     background-image: url("./images/coding.jpg");
     height: 45vh;
+}
+/* This selected the description for the largest image and restricts the size to a smaller percentage than the others. */
+#project-1 .project-info{
+    max-width: 30%;
 }
 
 #project-2 {
@@ -192,15 +201,17 @@ nav {
     height: 25vh;
 }
 
+/* This sets the style that appears when you hover over each project */
 .myWork a:hover {
     box-shadow:  0 0 50px var(--highlighted-background);
-    cursor: pointer;
     transition: 500ms;
 }
+
+
+/* This sets the text boxes for each project description */
 .project-info {
     background-color: var(--highlighted-text);
     color: var(--main-text);
-    margin-left: 0;
     width: fit-content;
     max-width: 50%;
     padding: 1%;
@@ -208,23 +219,17 @@ nav {
     text-align: left;
 }
 
-#project-1 .project-info{
-    max-width: 30%;
-}
 
 h4{
     padding-top: 2px;
     font-size: small;
 }
-
+ /* This aligns the footer and anchors it to the bottom */
 .footer {
     text-align: center;
     height: 20px;
     padding: 1%;
     position: relative;
-    bottom: 0;
-    right: 0%;
-    left: 0%;
 }
 h5{
     padding-bottom: 1%;
