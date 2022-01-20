@@ -176,7 +176,7 @@ nav {
 /* Each grid area has a name associated with it */
 #project-1 {
     grid-area: project-1;
-    background-image: url("./images/coding.jpg");
+    background-image: url("./images/furindr.PNG");
     height: 45vh;
 }
 /* This selected the description for the largest image and restricts the size to a smaller percentage than the others. */
@@ -218,6 +218,7 @@ nav {
 /* This sets the text boxes for each project description */
 .project-info {
     background-color: var(--highlighted-text);
+    margin: 0;
     color: var(--main-text);
     width: fit-content;
     max-width: 50%;
@@ -225,7 +226,6 @@ nav {
     flex-wrap: wrap;
     text-align: left;
 }
-
 
 h4{
     padding-top: 2px;
