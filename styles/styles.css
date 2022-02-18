@@ -165,18 +165,20 @@ nav {
     "project-4 project-5";
 }
 
-.myWork a {
+.project{
     border: 3px solid var(--highlighted-text);
     background-size: cover;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 0;
 }
 
 
 /* Each grid area has a name associated with it */
 #project-1 {
     grid-area: project-1;
-    background-image: url("./images/furindr.PNG");
+    background-image: url("./images/skyfall.PNG");
     height: 45vh;
 }
 /* This selected the description for the largest image and restricts the size to a smaller percentage than the others. */
@@ -186,7 +188,7 @@ nav {
 
 #project-2 {
     grid-area: project-2;
-    background-image: url("./images/computerGlobe.jpg");
+    background-image: url("./images/furindr.PNG");
     height: 25vh;
 }
 
@@ -209,7 +211,7 @@ nav {
 }
 
 /* This sets the style that appears when you hover over each project */
-.myWork a:hover {
+.project:hover {
     box-shadow:  0 0 50px var(--highlighted-background);
     transition: 500ms;
 }
@@ -225,6 +227,19 @@ nav {
     padding: 1%;
     flex-wrap: wrap;
     text-align: left;
+    z-index: 2;
+
+}
+.github {
+    background-color: var(--highlighted-text);
+    margin: 0;
+    color: var(--main-text);
+    width: fit-content;
+    max-width: 50%;
+    padding: 1%;
+    flex-wrap: wrap;
+    text-align: right;
+    z-index: 2;
 }
 
 h4{
