@@ -194,7 +194,7 @@ nav {
 
 #project-3 {
     grid-area: project-3;
-    background-image: url("./images/hardware.jpg");
+    background-image: url("./images/StreetFighter.PNG");
     height: 25vh;
 }
 
@@ -210,11 +210,6 @@ nav {
     height: 25vh;
 }
 
-/* This sets the style that appears when you hover over each project */
-.project:hover {
-    box-shadow:  0 0 50px var(--highlighted-background);
-    transition: 500ms;
-}
 
 
 /* This sets the text boxes for each project description */
@@ -228,7 +223,7 @@ nav {
     flex-wrap: wrap;
     text-align: left;
     z-index: 2;
-
+    
 }
 .github {
     background-color: var(--highlighted-text);
@@ -245,6 +240,17 @@ nav {
 h4{
     padding-top: 2px;
     font-size: small;
+}
+/* This sets the style that appears when you hover over each project */
+.project:hover{
+    box-shadow:  0 0 50px var(--highlighted-background);
+    transition: 500ms;
+    
+}
+
+.github:hover {
+    box-shadow:  0 0 50px var(--highlighted-background);
+    transition: 500ms;
 }
  /* This aligns the footer and anchors it to the bottom */
 .footer {
